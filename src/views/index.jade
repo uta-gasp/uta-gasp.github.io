@@ -3,9 +3,62 @@ html
     head
         title GaSP project
         meta(charset="utf-8")
-        link(rel='stylesheet', href='app.css')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="app.css")
 
     body
-        h1 GaSP project
-        script(src='app.js')
+        header
+            img(src="img/ylapalkki_TAUCHI_ENG.jpg")
+            section
+                h1 GaSP: Private and Shared Gaze
+                p This project primarily focuses on developing software solutions that make use of gaze pointer shared with others (peers, tutors, students, etc), either in real time or as a recorded data set. A secondary goal of the project is to generate new ideas on using the gaze pointer privately, especially in an education context.
+        main
+            p Repositories
+            ul
+                li
+                    a(href="https://github.com/uta-gasp/sgwm") Static gaze-to-word mapping tool
+                    .label.label-default.active &nbsp
+                    p Maps an array of fixation onto an array of words
+                li
+                    a(href="https://github.com/uta-gasp/lunddata-mapping") Lund data mapping
+                    .label.label-default.active &nbsp
+                    p Gaze-to-word mapping quality tester that uses anotated reading data collected in Lund
+                li
+                    a(href="https://uta-gasp.github.io/reading") Reading data recording and visualization tool
+                    .label.label-default.active &nbsp
+                    p To run the experiment with children reading short text in Finnish and later displaying the collected data in several modes
+                li
+                    a(href="https://github.com/uta-gasp/gazenet-server") Server for GazeNet
+                    .label.label-default.active &nbsp
+                    p Transmits data between GazeNet clients
+                li
+                    a(href="https://github.com/uta-gasp/gazenet-server") GazeNet
+                    .label.label-default.active &nbsp
+                    .label.label-default.onhold &nbsp
+                    p A tool to share gaze pointer.
+                li
+                    a(href="https://github.com/uta-gasp/gazenet-server") Server for GazeNet
+                    .label.label-default.active &nbsp
+                    .label.label-default.onhold &nbsp
+                    p Transmits data between GazeNet clients
+                li
+                    a(href="https://uta-gasp.github.io/dyslexia") Dyslexia
+                    .label.label-default.unfinished &nbsp
+                    .label.label-default.onhold &nbsp
+                    p Hides all words in a text except the word to read now and the word to read next.
+                li
+                    a(href="https://github.com/uta-gasp/eyetracker-comparison") Eye tracker comparison
+                    .label.label-default.closed &nbsp
+                    p To run the experiment with children for eye tracker accuracy investigation
+                li
+                    a(href="https://github.com/uta-gasp/gazelaser") GazeLaser
+                    .label.label-default.closed &nbsp
+                    p Displays gaze pointer on a screen
+        footer
+            a(href="http://gasp.sis.uta.fi/")
+                img(src="img/logo.png" width="150")
+            a(href="http://aka.fi")
+                img(src="img/aka.png" width="150")
+
+        script(src="app.js")
         script.
