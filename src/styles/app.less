@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto');
 
 body {
     margin: 0;
     padding: 0;
     background: #fff;
-    /* background: url("img/background.png") no-repeat left top fixed; */
-    background-size: 100vw 100vh;
+    background: url("img/ylapalkki_TAUCHI_ENG.jpg") no-repeat left top fixed;
+    background-size: 100vw;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -14,16 +14,68 @@ main, footer {
 	padding: 2em;
 }
 
-header {
-	color: #fff;
-	background-color: #003050;
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+}
 
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2em;
+}
+
+header {
 	img {
 		width: 100%;
 	}
 
 	section {
+		color: #fff;
+		background-color: #003050;
+
 		padding: 2em;
+		margin-top: calc((8 / 47) * 100vw);
+	}
+}
+
+main {
+	background-color: #fff;
+
+	ul {
+		li {
+			margin-top: 1.5em;
+		}
+
+		a.btn {
+			margin-left: 1em;
+			&:before {
+				content: "Run";
+			}
+		}
+
+		.labels {
+			display: block;
+
+			.label {
+				margin-right: 0.5em;
+			}
+
+			.closed:before {
+				content: "closed";
+			}
+
+			.active:before {
+				content: "active";
+			}
+
+			.onhold:before {
+				content: "on hold";
+			}
+
+			.unfinished:before {
+				content: "unfinished";
+			}
+		}
 	}
 }
 
@@ -33,24 +85,4 @@ footer {
 	img {
 		margin: 0 2em;
 	}
-}
-
-.label {
-	margin-left: 1em;
-}
-
-.closed:before {
-	content: "closed";
-}
-
-.active:before {
-	content: "active";
-}
-
-.onhold:before {
-	content: "on hold";
-}
-
-.unfinished:before {
-	content: "unfinished";
 }

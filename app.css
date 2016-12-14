@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto');
 body {
   margin: 0;
   padding: 0;
   background: #fff;
-  /* background: url("img/background.png") no-repeat left top fixed; */
-  background-size: 100vw 100vh;
+  background: url("img/ylapalkki_TAUCHI_ENG.jpg") no-repeat left top fixed;
+  background-size: 100vw;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
@@ -12,34 +12,56 @@ main,
 footer {
   padding: 2em;
 }
-header {
-  color: #fff;
-  background-color: #003050;
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+}
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
 }
 header img {
   width: 100%;
 }
 header section {
+  color: #fff;
+  background-color: #003050;
   padding: 2em;
+  margin-top: calc(17.0212766vw);
+}
+main {
+  background-color: #fff;
+}
+main ul li {
+  margin-top: 1.5em;
+}
+main ul a.btn {
+  margin-left: 1em;
+}
+main ul a.btn:before {
+  content: "Run";
+}
+main ul .labels {
+  display: block;
+}
+main ul .labels .label {
+  margin-right: 0.5em;
+}
+main ul .labels .closed:before {
+  content: "closed";
+}
+main ul .labels .active:before {
+  content: "active";
+}
+main ul .labels .onhold:before {
+  content: "on hold";
+}
+main ul .labels .unfinished:before {
+  content: "unfinished";
 }
 footer {
   background-color: #003050;
 }
 footer img {
   margin: 0 2em;
-}
-.label {
-  margin-left: 1em;
-}
-.closed:before {
-  content: "closed";
-}
-.active:before {
-  content: "active";
-}
-.onhold:before {
-  content: "on hold";
-}
-.unfinished:before {
-  content: "unfinished";
 }
