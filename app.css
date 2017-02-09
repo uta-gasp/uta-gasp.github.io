@@ -47,14 +47,23 @@ main ul .labels {
 main ul .labels .label {
   margin-right: 0.5em;
 }
+main ul .labels .closed {
+  background-color: #305F77;
+}
 main ul .labels .closed:before {
   content: "closed";
+}
+main ul .labels .active {
+  background-color: #307730;
 }
 main ul .labels .active:before {
   content: "active";
 }
 main ul .labels .onhold:before {
   content: "on hold";
+}
+main ul .labels .unfinished {
+  background-color: #773030;
 }
 main ul .labels .unfinished:before {
   content: "unfinished";

@@ -60,20 +60,31 @@ main {
 				margin-right: 0.5em;
 			}
 
-			.closed:before {
-				content: "closed";
+			.closed {
+				background-color: #305F77;
+				&:before {
+					content: "closed";
+				}
 			}
 
-			.active:before {
-				content: "active";
+			.active {
+				background-color: #307730;
+				&:before {
+					content: "active";
+				}
 			}
 
-			.onhold:before {
-				content: "on hold";
+			.onhold {
+				&:before {
+					content: "on hold";
+				}
 			}
 
-			.unfinished:before {
-				content: "unfinished";
+			.unfinished {
+				background-color: #773030;
+				&:before {
+					content: "unfinished";
+				}
 			}
 		}
 	}
