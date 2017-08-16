@@ -38,6 +38,15 @@ main ul li {
 main ul a.btn {
   margin-left: 1em;
 }
+main ul a.btn.btn-primary:before {
+  content: "Run";
+}
+main ul a.btn.btn-info:before {
+  content: "Manual";
+}
+main ul a.btn {
+  margin-left: 1em;
+}
 main ul a.btn:before {
   content: "Run";
 }
