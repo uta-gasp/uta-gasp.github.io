@@ -32,6 +32,9 @@ header section {
 main {
   background-color: #fff;
 }
+main ul {
+  margin-bottom: 3em;
+}
 main ul li {
   margin-top: 1.5em;
 }
